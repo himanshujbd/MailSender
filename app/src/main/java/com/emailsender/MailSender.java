@@ -58,7 +58,7 @@ public class MailSender extends javax.mail.Authenticator  {
                                                String sender, String recipients,String username,String email,String mobile,String dob,String age,String address,String profilePic ) throws Exception {
         MimeMessage message = new MimeMessage(session);
         DataHandler handler = new DataHandler(new ByteArrayDataSource(body.getBytes(), "text/plain"));
-        message.setFrom(new InternetAddress("no-reply@astromyntra.in"));
+        message.setFrom(new InternetAddress("no-reply@xyz.in"));
         message.setSender(new InternetAddress(sender));
         message.setSubject(subject);
         message.setDataHandler(handler);
